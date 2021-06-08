@@ -1,0 +1,44 @@
+detalii proiect RaspyCar:
+
+Lumini fata:
+	- faruri: se aprind de la buton
+
+lumini spate:
+	- stopuri: se aprind de la buton (intensitate scazuta)
+	- stopuri: se aprind in momentul franarii (intensitate scazuta)
+	- lampa marshalier: se aprind ca da cu spatele
+
+semnalizari stanga/dreapta:
+	- se aprind de la buton asociat directiei
+
+
+faruri + stopuri: 	 GPIO 2
+stopuri frana   : 	 GPIO 3
+lampa marshalier: 	 GPIO 4
+semnalizare stanga:  GPIO 23
+semnalizare dreapta: GPIO 24
+
+
+Controller:
+
+Joystick stanga:
+	- up -> inainte
+	- down -> inapoi, aprinde lampa marshalier
+	- neutru -> stopuri franare, stinge lampa marshalier (daca e pornita)
+
+Joystick dreapta:
+	- left -> stanga
+	- rigt -> dreapta
+	- neutru -> opreste semnalizare (daca e pornita)
+
+L2
+	- prima apasare -> semnalizare stanga on (daca e off, altfel invers)
+	- a doua apasare -> semnalizare stanga off (daca e on, altfel invers)
+
+R2
+	- prima apasare -> semnalizare dreapta on (daca e off, altfel invers)
+	- a doua apasare -> semnalizare dreapta off (daca e on, altfel invers)
+
+X
+ 	- prima apasare -> aprinde faruri
+ 	- a doua apasare -> stinge faruri

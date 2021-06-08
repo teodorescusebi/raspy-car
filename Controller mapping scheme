@@ -1,0 +1,33 @@
+type = 1
+
+L1 310
+L2 312
+
+R1 311
+R2 313
+
+(type = 3)
+DLeft code 16, val -1 (pressed), 0 (released)
+DRight code 16, val 1 (pressed), 0 (released)
+DUp: code 17, val -1 (pressed), 0 (released)
+DDown code 17, val 1 (pressed), 0 (released)
+
+X 307
+A 304
+B 305
+Y 308
+
+Joystick left move (type = 3)
+Neutru: 128
+Up: 0
+Down: 255
+Joystick left click 317
+
+Joystick riht move (type = 3)
+Neutru: 128
+Left: 0
+Right: 255
+Joystick riht click 318
+
+Select 314
+Start 315
